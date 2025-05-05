@@ -7,7 +7,7 @@ void st7735s_lcd_init(void)
 {
     // 1. LCD复位
     st7735s_lcd_reset();
-    LCD_BLK_SET;
+    LCD_BLK_SET;  // 开启背光
     // 2. 加载LCD参数
     st7735s_load_parameter();
 }
@@ -160,7 +160,6 @@ static void st7735s_load_parameter(void)
 #if LCD_DISPLAY_HORIZONTAL == 0
     st7735s_write_data_u8(0x08); // 默认方向
 #elif LCD_DISPLAY_HORIZONTAL == 1
-
     st7735s_write_data_u8(0xC8); // 水平镜像
 #elif LCD_DISPLAY_HORIZONTAL == 2
     st7735s_write_data_u8(0x78); // 垂直镜像
