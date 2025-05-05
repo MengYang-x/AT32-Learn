@@ -1,304 +1,0 @@
-Dependencies for Project 'UART', Target 'UART': (DO NOT MODIFY !)
-CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (..\src\at32f421_int.c)(0x680A40EE)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8\Device\Include-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8-D__UVISION_VERSION="536" -DAT32F421C8T7 -DAT32F421C8T7 -DUSE_STDPERIPH_DRIVER -DAT_START_F421_V1-o .\objects\at32f421_int.o --omf_browse .\objects\at32f421_int.crf --depend .\objects\at32f421_int.d)
-I (..\inc\at32f421_int.h)(0x680A40EE)
-I (..\..\libraries\cmsis\cm4\device_support\at32f421.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x680A31CA)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\device_support\system_at32f421.h)(0x680A31CA)
-I (..\..\libraries\drivers\inc\at32f421_def.h)(0x680A31CB)
-I (..\inc\at32f421_conf.h)(0x680A40EE)
-I (..\..\libraries\drivers\inc\at32f421_crm.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_tmr.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_gpio.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_usart.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_pwc.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_debug.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_flash.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_misc.h)(0x680A31CB)
-F (..\src\at32f421_wk_config.c)(0x680A40EE)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8\Device\Include-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8-D__UVISION_VERSION="536" -DAT32F421C8T7 -DAT32F421C8T7 -DUSE_STDPERIPH_DRIVER -DAT_START_F421_V1-o .\objects\at32f421_wk_config.o --omf_browse .\objects\at32f421_wk_config.crf --depend .\objects\at32f421_wk_config.d)
-I (..\inc\at32f421_wk_config.h)(0x680A40EE)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (..\..\libraries\cmsis\cm4\device_support\at32f421.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x680A31CA)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\device_support\system_at32f421.h)(0x680A31CA)
-I (..\..\libraries\drivers\inc\at32f421_def.h)(0x680A31CB)
-I (..\inc\at32f421_conf.h)(0x680A40EE)
-I (..\..\libraries\drivers\inc\at32f421_crm.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_tmr.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_gpio.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_usart.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_pwc.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_debug.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_flash.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_misc.h)(0x680A31CB)
-F (..\src\main.c)(0x680A40EE)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8\Device\Include-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8-D__UVISION_VERSION="536" -DAT32F421C8T7 -DAT32F421C8T7 -DUSE_STDPERIPH_DRIVER -DAT_START_F421_V1-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (..\inc\at32f421_wk_config.h)(0x680A40EE)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (..\..\libraries\cmsis\cm4\device_support\at32f421.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x680A31CA)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\device_support\system_at32f421.h)(0x680A31CA)
-I (..\..\libraries\drivers\inc\at32f421_def.h)(0x680A31CB)
-I (..\inc\at32f421_conf.h)(0x680A40EE)
-I (..\..\libraries\drivers\inc\at32f421_crm.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_tmr.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_gpio.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_usart.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_pwc.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_debug.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_flash.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_misc.h)(0x680A31CB)
-I (..\inc\wk_usart.h)(0x680A40EE)
-I (..\inc\wk_gpio.h)(0x680A40EE)
-I (..\inc\wk_system.h)(0x680A40EE)
-F (..\src\wk_system.c)(0x680A40EE)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8\Device\Include-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8-D__UVISION_VERSION="536" -DAT32F421C8T7 -DAT32F421C8T7 -DUSE_STDPERIPH_DRIVER -DAT_START_F421_V1-o .\objects\wk_system.o --omf_browse .\objects\wk_system.crf --depend .\objects\wk_system.d)
-I (..\inc\wk_system.h)(0x680A40EE)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (..\..\libraries\cmsis\cm4\device_support\at32f421.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x680A31CA)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\device_support\system_at32f421.h)(0x680A31CA)
-I (..\..\libraries\drivers\inc\at32f421_def.h)(0x680A31CB)
-I (..\inc\at32f421_conf.h)(0x680A40EE)
-I (..\..\libraries\drivers\inc\at32f421_crm.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_tmr.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_gpio.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_usart.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_pwc.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_debug.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_flash.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_misc.h)(0x680A31CB)
-F (..\src\wk_usart.c)(0x680A40EE)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8\Device\Include-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8-D__UVISION_VERSION="536" -DAT32F421C8T7 -DAT32F421C8T7 -DUSE_STDPERIPH_DRIVER -DAT_START_F421_V1-o .\objects\wk_usart.o --omf_browse .\objects\wk_usart.crf --depend .\objects\wk_usart.d)
-I (..\inc\wk_usart.h)(0x680A40EE)
-I (..\inc\at32f421_wk_config.h)(0x680A40EE)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (..\..\libraries\cmsis\cm4\device_support\at32f421.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x680A31CA)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\device_support\system_at32f421.h)(0x680A31CA)
-I (..\..\libraries\drivers\inc\at32f421_def.h)(0x680A31CB)
-I (..\inc\at32f421_conf.h)(0x680A40EE)
-I (..\..\libraries\drivers\inc\at32f421_crm.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_tmr.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_gpio.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_usart.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_pwc.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_debug.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_flash.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_misc.h)(0x680A31CB)
-F (..\src\wk_gpio.c)(0x680A40EE)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8\Device\Include-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8-D__UVISION_VERSION="536" -DAT32F421C8T7 -DAT32F421C8T7 -DUSE_STDPERIPH_DRIVER -DAT_START_F421_V1-o .\objects\wk_gpio.o --omf_browse .\objects\wk_gpio.crf --depend .\objects\wk_gpio.d)
-I (..\inc\wk_gpio.h)(0x680A40EE)
-I (..\inc\at32f421_wk_config.h)(0x680A40EE)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (..\..\libraries\cmsis\cm4\device_support\at32f421.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x680A31CA)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\device_support\system_at32f421.h)(0x680A31CA)
-I (..\..\libraries\drivers\inc\at32f421_def.h)(0x680A31CB)
-I (..\inc\at32f421_conf.h)(0x680A40EE)
-I (..\..\libraries\drivers\inc\at32f421_crm.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_tmr.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_gpio.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_usart.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_pwc.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_debug.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_flash.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_misc.h)(0x680A31CB)
-F (..\..\libraries\drivers\src\at32f421_crm.c)(0x680A31CB)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8\Device\Include-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8-D__UVISION_VERSION="536" -DAT32F421C8T7 -DAT32F421C8T7 -DUSE_STDPERIPH_DRIVER -DAT_START_F421_V1-o .\objects\at32f421_crm.o --omf_browse .\objects\at32f421_crm.crf --depend .\objects\at32f421_crm.d)
-I (..\inc\at32f421_conf.h)(0x680A40EE)
-I (..\..\libraries\drivers\inc\at32f421_crm.h)(0x680A31CB)
-I (..\..\libraries\cmsis\cm4\device_support\at32f421.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x680A31CA)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\device_support\system_at32f421.h)(0x680A31CA)
-I (..\..\libraries\drivers\inc\at32f421_def.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_tmr.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_gpio.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_usart.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_pwc.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_debug.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_flash.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_misc.h)(0x680A31CB)
-F (..\..\libraries\drivers\src\at32f421_tmr.c)(0x680A31CB)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8\Device\Include-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8-D__UVISION_VERSION="536" -DAT32F421C8T7 -DAT32F421C8T7 -DUSE_STDPERIPH_DRIVER -DAT_START_F421_V1-o .\objects\at32f421_tmr.o --omf_browse .\objects\at32f421_tmr.crf --depend .\objects\at32f421_tmr.d)
-I (..\inc\at32f421_conf.h)(0x680A40EE)
-I (..\..\libraries\drivers\inc\at32f421_crm.h)(0x680A31CB)
-I (..\..\libraries\cmsis\cm4\device_support\at32f421.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x680A31CA)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\device_support\system_at32f421.h)(0x680A31CA)
-I (..\..\libraries\drivers\inc\at32f421_def.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_tmr.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_gpio.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_usart.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_pwc.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_debug.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_flash.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_misc.h)(0x680A31CB)
-F (..\..\libraries\drivers\src\at32f421_gpio.c)(0x680A31CB)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8\Device\Include-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8-D__UVISION_VERSION="536" -DAT32F421C8T7 -DAT32F421C8T7 -DUSE_STDPERIPH_DRIVER -DAT_START_F421_V1-o .\objects\at32f421_gpio.o --omf_browse .\objects\at32f421_gpio.crf --depend .\objects\at32f421_gpio.d)
-I (..\inc\at32f421_conf.h)(0x680A40EE)
-I (..\..\libraries\drivers\inc\at32f421_crm.h)(0x680A31CB)
-I (..\..\libraries\cmsis\cm4\device_support\at32f421.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x680A31CA)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\device_support\system_at32f421.h)(0x680A31CA)
-I (..\..\libraries\drivers\inc\at32f421_def.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_tmr.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_gpio.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_usart.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_pwc.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_debug.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_flash.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_misc.h)(0x680A31CB)
-F (..\..\libraries\drivers\src\at32f421_usart.c)(0x680A31CB)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8\Device\Include-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8-D__UVISION_VERSION="536" -DAT32F421C8T7 -DAT32F421C8T7 -DUSE_STDPERIPH_DRIVER -DAT_START_F421_V1-o .\objects\at32f421_usart.o --omf_browse .\objects\at32f421_usart.crf --depend .\objects\at32f421_usart.d)
-I (..\inc\at32f421_conf.h)(0x680A40EE)
-I (..\..\libraries\drivers\inc\at32f421_crm.h)(0x680A31CB)
-I (..\..\libraries\cmsis\cm4\device_support\at32f421.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x680A31CA)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\device_support\system_at32f421.h)(0x680A31CA)
-I (..\..\libraries\drivers\inc\at32f421_def.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_tmr.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_gpio.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_usart.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_pwc.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_debug.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_flash.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_misc.h)(0x680A31CB)
-F (..\..\libraries\drivers\src\at32f421_pwc.c)(0x680A31CB)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8\Device\Include-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8-D__UVISION_VERSION="536" -DAT32F421C8T7 -DAT32F421C8T7 -DUSE_STDPERIPH_DRIVER -DAT_START_F421_V1-o .\objects\at32f421_pwc.o --omf_browse .\objects\at32f421_pwc.crf --depend .\objects\at32f421_pwc.d)
-I (..\inc\at32f421_conf.h)(0x680A40EE)
-I (..\..\libraries\drivers\inc\at32f421_crm.h)(0x680A31CB)
-I (..\..\libraries\cmsis\cm4\device_support\at32f421.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x680A31CA)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\device_support\system_at32f421.h)(0x680A31CA)
-I (..\..\libraries\drivers\inc\at32f421_def.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_tmr.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_gpio.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_usart.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_pwc.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_debug.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_flash.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_misc.h)(0x680A31CB)
-F (..\..\libraries\drivers\src\at32f421_debug.c)(0x680A31CB)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8\Device\Include-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8-D__UVISION_VERSION="536" -DAT32F421C8T7 -DAT32F421C8T7 -DUSE_STDPERIPH_DRIVER -DAT_START_F421_V1-o .\objects\at32f421_debug.o --omf_browse .\objects\at32f421_debug.crf --depend .\objects\at32f421_debug.d)
-I (..\inc\at32f421_conf.h)(0x680A40EE)
-I (..\..\libraries\drivers\inc\at32f421_crm.h)(0x680A31CB)
-I (..\..\libraries\cmsis\cm4\device_support\at32f421.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x680A31CA)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\device_support\system_at32f421.h)(0x680A31CA)
-I (..\..\libraries\drivers\inc\at32f421_def.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_tmr.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_gpio.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_usart.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_pwc.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_debug.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_flash.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_misc.h)(0x680A31CB)
-F (..\..\libraries\drivers\src\at32f421_flash.c)(0x680A31CB)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8\Device\Include-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8-D__UVISION_VERSION="536" -DAT32F421C8T7 -DAT32F421C8T7 -DUSE_STDPERIPH_DRIVER -DAT_START_F421_V1-o .\objects\at32f421_flash.o --omf_browse .\objects\at32f421_flash.crf --depend .\objects\at32f421_flash.d)
-I (..\inc\at32f421_conf.h)(0x680A40EE)
-I (..\..\libraries\drivers\inc\at32f421_crm.h)(0x680A31CB)
-I (..\..\libraries\cmsis\cm4\device_support\at32f421.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x680A31CA)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\device_support\system_at32f421.h)(0x680A31CA)
-I (..\..\libraries\drivers\inc\at32f421_def.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_tmr.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_gpio.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_usart.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_pwc.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_debug.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_flash.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_misc.h)(0x680A31CB)
-F (..\..\libraries\drivers\src\at32f421_misc.c)(0x680A31CB)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8\Device\Include-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8-D__UVISION_VERSION="536" -DAT32F421C8T7 -DAT32F421C8T7 -DUSE_STDPERIPH_DRIVER -DAT_START_F421_V1-o .\objects\at32f421_misc.o --omf_browse .\objects\at32f421_misc.crf --depend .\objects\at32f421_misc.d)
-I (..\inc\at32f421_conf.h)(0x680A40EE)
-I (..\..\libraries\drivers\inc\at32f421_crm.h)(0x680A31CB)
-I (..\..\libraries\cmsis\cm4\device_support\at32f421.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x680A31CA)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\device_support\system_at32f421.h)(0x680A31CA)
-I (..\..\libraries\drivers\inc\at32f421_def.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_tmr.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_gpio.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_usart.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_pwc.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_debug.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_flash.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_misc.h)(0x680A31CB)
-F (..\..\libraries\cmsis\cm4\device_support\system_at32f421.c)(0x680A31CA)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections -I ..\..\libraries\drivers\inc -I ..\..\libraries\cmsis\cm4\core_support -I ..\..\libraries\cmsis\cm4\device_support -I ..\inc-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8\Device\Include-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8-D__UVISION_VERSION="536" -DAT32F421C8T7 -DAT32F421C8T7 -DUSE_STDPERIPH_DRIVER -DAT_START_F421_V1-o .\objects\system_at32f421.o --omf_browse .\objects\system_at32f421.crf --depend .\objects\system_at32f421.d)
-I (..\..\libraries\cmsis\cm4\device_support\at32f421.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\core_cm4.h)(0x680A31CA)
-I (D:\15.Keil\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_version.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_compiler.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\cmsis_armcc.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\core_support\mpu_armv7.h)(0x680A31CA)
-I (..\..\libraries\cmsis\cm4\device_support\system_at32f421.h)(0x680A31CA)
-I (..\..\libraries\drivers\inc\at32f421_def.h)(0x680A31CB)
-I (..\inc\at32f421_conf.h)(0x680A40EE)
-I (..\..\libraries\drivers\inc\at32f421_crm.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_tmr.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_gpio.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_usart.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_pwc.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_debug.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_flash.h)(0x680A31CB)
-I (..\..\libraries\drivers\inc\at32f421_misc.h)(0x680A31CB)
-F (.\startup_at32f421.s)(0x680A40ED)(--cpu Cortex-M4 -g --apcs=interwork -ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8\Device\Include-ID:\15.Keil\Packs\ArteryTek\AT32F421_DFP\2.1.8--pd "__UVISION_VERSION SETA 536" --pd "AT32F421C8T7 SETA 1"--list .\listings\startup_at32f421.lst --xref -o .\objects\startup_at32f421.o --depend .\objects\startup_at32f421.d)

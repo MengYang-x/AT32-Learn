@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "user_config.h": "c",
+        "at32f421_int.h": "c",
+        "st7735s.h": "c",
+        "at32f421_wk_config.h": "c",
+        "wk_system.h": "c",
+        "limits": "c"
+    }
+}
