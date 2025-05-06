@@ -157,13 +157,13 @@ static void st7735s_load_parameter(void)
     st7735s_write_commend(0x3A); // 像素格式
     st7735s_write_data_u8(0x05); // RGB565格式(0x05)、RGB444格式(0x03)、RGB666格式(0x06)
     st7735s_write_commend(0x36);
-#if LCD_DISPLAY_HORIZONTAL == 0
+#if DISPLAY_DIRECTION == DISPLAY_DEFAULT
     st7735s_write_data_u8(0x08); // 默认方向
-#elif LCD_DISPLAY_HORIZONTAL == 1
+#elif DISPLAY_DIRECTION == DISPLAY_HORIZONTAL
     st7735s_write_data_u8(0xC8); // 水平镜像
-#elif LCD_DISPLAY_HORIZONTAL == 2
+#elif DISPLAY_DIRECTION == DISPLAY_VERTICAL
     st7735s_write_data_u8(0x78); // 垂直镜像
-#else
+#elif DISPLAY_DIRECTION == DISPLAY_ROTATE_180
     st7735s_write_data_u8(0xA8); // 旋转180°
 #endif
 

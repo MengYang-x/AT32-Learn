@@ -5,6 +5,15 @@
 #define LCD_WIDE    160
 #define LCD_HIGH    80
 
+#define COLOR_INVERSION_EN                  (DISABLE)   // 显示颜色反转
+#define DISPLAY_DIRECTION                   (DISPLAY_DEFAULT)
+
+// LCD 显示方向
+#define DISPLAY_DEFAULT                     (0) // 默认方向
+#define DISPLAY_HORIZONTAL                  (1) // 水平方向
+#define DISPLAY_VERTICAL                    (2) // 垂直方向
+#define DISPLAY_ROTATE_180                  (3) // 旋转180°                  
+
 #define LCD_DISPLAY_HORIZONTAL              0
 #if LCD_DISPLAY_HORIZONTAL == 1
 #define LCD_W       LCD_WIDE
@@ -13,8 +22,6 @@
 #define LCD_W       LCD_HIGH
 #define LCD_H       LCD_WIDE
 #endif
-
-#define COLOR_INVERSION_EN    (0)   // 显示颜色反转
 
 // 颜色定义RGB565
 // R R R R R G G G G G G B B B B B  
@@ -47,6 +54,5 @@ void st7735s_lcd_draw_point(u16 x, u16 y, u16 color);
 #define LCD_BLK_CLR                       gpio_bits_reset(LCD_BLK_GPIO_PORT, LCD_BLK_PIN)
 #define LCD_BLK_SET                       gpio_bits_set(LCD_BLK_GPIO_PORT, LCD_BLK_PIN)
 #endif
-
 
 #endif

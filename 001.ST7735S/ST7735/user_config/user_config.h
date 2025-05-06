@@ -19,6 +19,9 @@
 #define  STM32                  (102)
 #define  GD32                   (103)
 
+#define ENABLE                  (1)
+#define DISABLE                 (0)
+
 ////////////////////////////////////////////////////////////////////////
 #define MCU_ID                  AT32 // STM32
 #define SPI_TYPE                SOFTWARE_SPI
