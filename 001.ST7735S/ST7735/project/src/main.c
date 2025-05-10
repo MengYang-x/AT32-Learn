@@ -98,17 +98,24 @@ int main(void)
   /* add user code begin 2 */
   st7735s_lcd_init();
   st7735s_lcd_clear(COLOR_BLACK);
-  st7735s_lcd_fill_color(0, 0, 20, 20, COLOR_RED);
-  st7735s_lcd_fill_color(20, 20, 40, 40, COLOR_GREEN);
-  st7735s_lcd_fill_color(40, 40, 60, 60, COLOR_BLUE);
-  st7735s_lcd_fill_color(60, 60, 80, 80, COLOR_YELLOW);
-  //st7735s_lcd_draw_point(50, 50, COLOR_BLACK);
+ // st7735s_lcd_fill_color(0, 0, 20, 20, COLOR_RED);
+ // st7735s_lcd_fill_color(20, 20, 40, 40, COLOR_GREEN);
+ // st7735s_lcd_fill_color(40, 40, 60, 60, COLOR_BLUE);
+ // st7735s_lcd_fill_color(60, 60, 80, 80, COLOR_YELLOW);
+
+  // st7735s_lcd_draw_string(0, 20, "1234567890", COLOR_WHITE, COLOR_BLACK, 32, 0);
+	// st7735s_lcd_draw_string(0, 48, "1234567890", COLOR_RED, COLOR_BLACK, 32, 0);
+	// st7735s_lcd_draw_string(0, 76, "1234567890", COLOR_YELLOW, COLOR_BLACK, 32, 0);
+  LCD_ShowIntNum(0, 60, 12345, 5, COLOR_WHITE, COLOR_BLACK, 32);
+  float t = 0;
   /* add user code end 2 */
 
   while(1)
   {
     /* add user code begin 3 */
-    
+    LCD_ShowFloatNum1(10, 60, t, 4, COLOR_WHITE, COLOR_BLACK, 32);
+    t+=0.11;
+    delay_ms(500);
     /* add user code end 3 */
   }
 }

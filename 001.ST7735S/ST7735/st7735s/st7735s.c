@@ -1,4 +1,8 @@
 #include "st7735s.h"
+#include "fonts/ascii_1206.h"
+#include "fonts/ascii_1608.h"
+#include "fonts/ascii_2412.h"
+#include "fonts/ascii_3216.h"
 
 static void st7735s_lcd_reset(void);
 static void st7735s_load_parameter(void);
@@ -173,7 +177,7 @@ static void st7735s_load_parameter(void)
     st7735s_write_commend(0x20); // display color inversion off，关闭颜色反转
 #endif
 
-    st7735s_write_commend(0x29); // Display on
+    st7735s_write_commend(0x29); // Display on，开屏
 }
 
 /**
@@ -187,12 +191,12 @@ static void st7735s_lcd_address_set(u16 x1, u16 y1, u16 x2, u16 y2)
 #if LCD_DISPLAY_HORIZONTAL == 0
 
     st7735s_write_commend(0x2A);
-    st7735s_write_data_u16(x1 + 26);
-    st7735s_write_data_u16(x2 + 26);
+    st7735s_write_data_u16(x1);
+    st7735s_write_data_u16(x2);
 
     st7735s_write_commend(0x2B);
-    st7735s_write_data_u16(y1 + 1);
-    st7735s_write_data_u16(y2 + 1);
+    st7735s_write_data_u16(y1);
+    st7735s_write_data_u16(y2);
 
     st7735s_write_commend(0x2C);
 #else
@@ -249,4 +253,129 @@ void st7735s_lcd_draw_point(u16 x, u16 y, u16 color)
 {
     st7735s_lcd_address_set(x, y, x, y);
     st7735s_write_data_u16(color);
+}
+
+/**
+ * @brief 绘制单个字符
+ * @date 2025-05-09
+ * @author mengyang
+ */
+static void st7735s_lcd_draw_char(u16 x, u16 y, u8 num, u16 fc, u16 bc, u8 sizey, u8 mode)
+{
+    u8 temp, sizex, t, m = 0;
+    u16 i, TypefaceNum; // 一个字符所占字节大小
+    u16 x0 = x;
+    sizex = sizey / 2;
+    TypefaceNum = (sizex / 8 + ((sizex % 8) ? 1 : 0)) * sizey;
+    num = num - ' ';                                             // 得到偏移后的值
+    st7735s_lcd_address_set(x, y, x + sizex - 1, y + sizey - 1); // 设置光标位置
+    for (i = 0; i < TypefaceNum; i++)
+    {
+        if (sizey == 12)
+            temp = ascii_1206[num][i]; // 调用6*12字体
+        else if (sizey == 16)
+            temp = ascii_1608[num][i]; // 调用8*16字体
+        else if (sizey == 24)
+            temp = ascii_2412[num][i]; // 调用12*24字体
+        else if (sizey == 32)
+            temp = ascii_3216[num][i]; // 调用16*32字体
+        else
+            return;
+        for (t = 0; t < 8; t++)
+        {
+            if (!mode) // 非叠加模式
+            {
+                if (temp & (0x01 << t))
+                    st7735s_write_data_u16(fc);
+                else
+                    st7735s_write_data_u16(bc);
+                m++;
+                if (m % sizex == 0)
+                {
+                    m = 0;
+                    break;
+                }
+            }
+            else // 叠加模式
+            {
+                if (temp & (0x01 << t))
+                    st7735s_lcd_draw_point(x, y, fc); // 画一个点
+                x++;
+                if ((x - x0) == sizex)
+                {
+                    x = x0;
+                    y++;
+                    break;
+                }
+            }
+        }
+    }
+}
+
+/**
+ * @brief 绘制字符串
+ * @date 2025-05-09
+ * @author mengyang
+ */
+void st7735s_lcd_draw_string(u16 x, u16 y, const u8 *p, u16 fc, u16 bc, u8 sizey, u8 mode)
+{
+    while (*p != '\0')
+    {
+        st7735s_lcd_draw_char(x, y, *p, fc, bc, sizey, mode);
+        x += sizey / 2;
+        p++;
+    }
+}
+
+static u32 mypow(u8 m,u8 n)
+{
+	u32 result=1;	 
+	while(n--)result*=m;
+	return result;
+}
+/**
+ * @brief 绘制整数变量
+ */
+void LCD_ShowIntNum(u16 x, u16 y, u16 num, u8 len, u16 fc, u16 bc, u8 sizey)
+{
+    u8 t, temp;
+    u8 enshow = 0;
+    u8 sizex = sizey / 2;
+    for (t = 0; t < len; t++)
+    {
+        temp = (num / mypow(10, len - t - 1)) % 10;
+        if (enshow == 0 && t < (len - 1))
+        {
+            if (temp == 0)
+            {
+                st7735s_lcd_draw_char(x + t * sizex, y, ' ', fc, bc, sizey, 0);
+                continue;
+            }
+            else
+                enshow = 1;
+        }
+        st7735s_lcd_draw_char(x + t * sizex, y, temp + 48, fc, bc, sizey, 0);
+    }
+}
+
+ /**
+  * @brief 绘制两位小数变量
+  */
+void LCD_ShowFloatNum1(u16 x, u16 y, float num, u8 len, u16 fc, u16 bc, u8 sizey)
+{
+    u8 t, temp, sizex;
+    u16 num1;
+    sizex = sizey / 2;
+    num1 = num * 100;
+    for (t = 0; t < len; t++)
+    {
+        temp = (num1 / mypow(10, len - t - 1)) % 10;
+        if (t == (len - 2))
+        {
+            st7735s_lcd_draw_char(x + (len - 2) * sizex, y, '.', fc, bc, sizey, 0);
+            t++;
+            len += 1;
+        }
+        st7735s_lcd_draw_char(x + t * sizex, y, temp + 48, fc, bc, sizey, 0);
+    }
 }

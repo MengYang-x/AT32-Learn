@@ -16,4 +16,6 @@
   ..\..\libraries\drivers\inc\at32f421_pwc.h \
   ..\..\libraries\drivers\inc\at32f421_debug.h \
   ..\..\libraries\drivers\inc\at32f421_flash.h \
-  ..\..\libraries\drivers\inc\at32f421_misc.h ..\inc\wk_system.h
+  ..\..\libraries\drivers\inc\at32f421_misc.h ..\inc\wk_system.h \
+  ..\..\st7735s\fonts\ascii_1206.h ..\..\st7735s\fonts\ascii_1608.h \
+  ..\..\st7735s\fonts\ascii_2412.h ..\..\st7735s\fonts\ascii_3216.h

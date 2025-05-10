@@ -6,7 +6,7 @@
 #define LCD_HIGH    80
 
 #define COLOR_INVERSION_EN                  (DISABLE)   // 显示颜色反转
-#define DISPLAY_DIRECTION                   (DISPLAY_DEFAULT)
+#define DISPLAY_DIRECTION                   (3)
 
 // LCD 显示方向
 #define DISPLAY_DEFAULT                     (0) // 默认方向
@@ -39,7 +39,9 @@ void st7735s_lcd_init(void);
 void st7735s_lcd_clear(u16 color);
 void st7735s_lcd_fill_color(u16 x1, u16 y1, u16 x2, u16 y2, u16 color);
 void st7735s_lcd_draw_point(u16 x, u16 y, u16 color);
-
+void st7735s_lcd_draw_string(u16 x, u16 y, const u8 *p, u16 fc, u16 bc, u8 sizey, u8 mode);
+void LCD_ShowIntNum(u16 x, u16 y, u16 num, u8 len, u16 fc, u16 bc, u8 sizey);
+void LCD_ShowFloatNum1(u16 x, u16 y, float num, u8 len, u16 fc, u16 bc, u8 sizey);
 #if (SPI_TYPE == SOFTWARE_SPI && MCU_ID == AT32)
 #define LCD_SCLK_CLR                      gpio_bits_reset(LCD_SCL_GPIO_PORT, LCD_SCL_PIN)
 #define LCD_SCLK_SET                      gpio_bits_set(LCD_SCL_GPIO_PORT, LCD_SCL_PIN)

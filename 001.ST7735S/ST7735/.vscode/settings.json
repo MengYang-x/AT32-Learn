@@ -5,6 +5,10 @@
         "st7735s.h": "c",
         "at32f421_wk_config.h": "c",
         "wk_system.h": "c",
-        "limits": "c"
+        "limits": "c",
+        "ascii_1206.h": "c",
+        "ascii_2412.h": "c",
+        "ascii_1608.h": "c",
+        "ascii_3216.h": "c"
     }
 }
